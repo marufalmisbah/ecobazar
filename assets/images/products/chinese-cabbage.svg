@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs><filter id="f"><feColorMatrix type="hueRotate" values="-12"/></filter></defs>
+<ellipse cx="200" cy="338" rx="105" ry="13" fill="#000" opacity=".07"/>
+<text x="200" y="285" font-size="230" text-anchor="middle" font-family="Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif" filter="url(#f)">🥬</text>
+</svg>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ecobazar - your online store for fresh groceries, fruits and vegetables.">
+  <title>Home - Ecobazar</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 + Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body data-page="home">
+
+<!-- Top bar -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center">
+    <span><i class="bi bi-geo-alt"></i>Store Location: Lincoln- 344, Illinois, Chicago, USA</span>
+    <span class="d-none d-md-inline">
+      <a href="#">Eng <i class="bi bi-chevron-down small"></i></a><span class="sep"></span>
+      <a href="#">USD <i class="bi bi-chevron-down small"></i></a><span class="sep">|</span>
+      <a href="login.html">Sign In</a> / <a href="register.html">Sign Up</a>
+    </span>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-6 col-lg-3">
+        <a href="index.html" class="logo"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V15" stroke="#00b207" stroke-width="3" stroke-linecap="round"/><path d="M16 17C16 10 11 6 3 6c0 8 4 12 13 11z" fill="#00b207"/><path d="M16 14c0-6 4-10 13-10 0 8-5 12-13 10z" fill="#2c742f"/></svg>Ecobazar</a>
+      </div>
+      <div class="col-6 d-lg-none text-end">
+        <button class="btn border" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-label="Menu"><i class="bi bi-list fs-4"></i></button>
+      </div>
+      <div class="col-12 col-lg-5 order-3 order-lg-2">
+        <form class="search-box js-header-search" role="search">
+          <i class="bi bi-search s-ico"></i>
+          <input type="search" placeholder="Search" aria-label="Search">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-12 col-lg-4 order-2 order-lg-3">
+        <div class="header-icons">
+          <a href="wishlist.html" class="icon-link" aria-label="Wishlist"><i class="bi bi-heart"></i><span class="badge-count wish-count">0</span></a>
+          <span class="divider-v"></span>
+          <a href="cart.html" class="cart-mini">
+            <span class="icon-link"><i class="bi bi-bag"></i><span class="badge-count cart-count">0</span></span>
+            <span><small>Shopping cart</small><strong class="cart-total">$0.00</strong></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="main-nav">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+      <div class="d-flex flex-wrap align-items-center gap-lg-3 flex-grow-1">
+        <div class="dropdown">
+          <button class="cat-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>All Categories<i class="bi bi-chevron-down small"></i></button>
+          <ul class="dropdown-menu"><li><a class="dropdown-item" href="shop.html?cat=fruits">Fresh Fruit</a></li><li><a class="dropdown-item" href="shop.html?cat=vegetables">Fresh Vegetables</a></li><li><a class="dropdown-item" href="shop.html?cat=meat-fish">Meat &amp; Fish</a></li><li><a class="dropdown-item" href="shop.html?cat=beverages">Beverages</a></li><li><a class="dropdown-item" href="shop.html?cat=cooking">Cooking Essentials</a></li><li><a class="dropdown-item" href="shop.html?cat=snacks">Snacks &amp; Bakery</a></li></ul>
+        </div>
+        <div class="collapse d-lg-block" id="mainMenu">
+          <ul class="main-links">
+            <li class="nav-item dropdown"><a class="ml active" href="index.html">Home</a><button class="chev" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open Home menu"><i class="bi bi-chevron-down"></i></button><ul class="dropdown-menu"><li><a class="dropdown-item" href="index.html">Home</a></li></ul></li>
+            <li class="nav-item dropdown"><a class="ml" href="shop.html">Shop</a><button class="chev" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open Shop menu"><i class="bi bi-chevron-down"></i></button><ul class="dropdown-menu"><li><a class="dropdown-item" href="shop.html">Shop</a></li><li><a class="dropdown-item" href="product-details.html">Product Details</a></li></ul></li>
+            <li class="nav-item dropdown"><a class="ml" href="#">Pages</a><button class="chev" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open Pages menu"><i class="bi bi-chevron-down"></i></button><ul class="dropdown-menu"><li><a class="dropdown-item" href="cart.html">Cart</a></li><li><a class="dropdown-item" href="checkout.html">Checkout</a></li><li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li><li><a class="dropdown-item" href="login.html">Sign In</a></li><li><a class="dropdown-item" href="register.html">Create Account</a></li></ul></li>
+            <li class="nav-item dropdown"><a class="ml" href="blog.html">Blog</a><button class="chev" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open Blog menu"><i class="bi bi-chevron-down"></i></button><ul class="dropdown-menu"><li><a class="dropdown-item" href="blog.html">Blog</a></li></ul></li>
+            <li class="nav-item"><a class="ml" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="ml" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <span class="nav-phone d-none d-lg-inline"><i class="bi bi-telephone"></i>(219) 555-0114</span>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero2">
+  <span class="leaf" style="left:3%;top:4%">🍃</span><span class="leaf" style="right:2%;top:6%;transform:scaleX(-1)">🌿</span>
+  <span class="leaf" style="right:8%;bottom:8%">🍃</span>
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="slide"><div class="container"><div class="row align-items-center g-4">
+          <div class="col-lg-6"><div class="hero-art"><span class="e" style="left:16%;top:20%;font-size:17em">🧺</span><span class="e" style="left:0%;top:30%;font-size:12em">🥬</span><span class="e" style="left:36%;top:2%;font-size:7em;transform:rotate(25deg)">🥕</span><span class="e" style="left:62%;top:34%;font-size:8em">🍅</span><span class="e" style="left:58%;top:62%;font-size:6em">🌶️</span><span class="e" style="left:42%;top:68%;font-size:9em">🥦</span><span class="e" style="left:10%;top:70%;font-size:8em;transform:rotate(-20deg)">🍆</span><span class="e" style="left:70%;top:60%;font-size:7em">🫑</span><div class="off-badge"><span><b>70%</b>OFF</span></div></div></div>
+          <div class="col-lg-5 hero-text">
+            <span class="eyebrow">Welcome to Ecobazar</span>
+            <h1>Fresh &amp; Healthy<br>Organic Food</h1>
+            <p>Free shipping on all your order, we deliver, you enjoy</p>
+            <a href="shop.html" class="btn-eb">Shop now <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div></div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="slide"><div class="container"><div class="row align-items-center g-4">
+          <div class="col-lg-6"><div class="hero-art"><span class="e" style="left:18%;top:22%;font-size:17em">🧺</span><span class="e" style="left:2%;top:34%;font-size:10em">🍎</span><span class="e" style="left:62%;top:36%;font-size:9em">🍊</span><span class="e" style="left:40%;top:2%;font-size:7em">🍓</span><span class="e" style="left:8%;top:68%;font-size:8em;transform:rotate(-15deg)">🍌</span><span class="e" style="left:60%;top:66%;font-size:8em">🍇</span><span class="e" style="left:38%;top:68%;font-size:8em">🍍</span><div class="off-badge"><span><b>50%</b>OFF</span></div></div></div>
+          <div class="col-lg-5 hero-text">
+            <span class="eyebrow">Fresh from the orchard</span>
+            <h1>100% Fresh<br>Fruits Daily</h1>
+            <p>Sweet, juicy and picked at their best. Delivered to your door</p>
+            <a href="shop.html" class="btn-eb">Shop now <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div></div></div>
+      </div>
+      <div class="carousel-item">
+        <div class="slide"><div class="container"><div class="row align-items-center g-4">
+          <div class="col-lg-6"><div class="hero-art"><span class="e" style="left:12%;top:22%;font-size:15em">🥛</span><span class="e" style="left:50%;top:40%;font-size:9em">🥚</span><span class="e" style="left:60%;top:8%;font-size:8em">🧀</span><span class="e" style="left:30%;top:66%;font-size:9em">🍞</span><span class="e" style="left:66%;top:66%;font-size:6em">🧈</span><span class="e" style="left:2%;top:64%;font-size:7em">🥐</span><div class="off-badge"><span><b>30%</b>OFF</span></div></div></div>
+          <div class="col-lg-5 hero-text">
+            <span class="eyebrow">Dairy &amp; eggs</span>
+            <h1>Farm Fresh<br>Dairy Products</h1>
+            <p>Pure milk, eggs and cheese from trusted local farms</p>
+            <a href="shop.html" class="btn-eb">Shop now <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div></div></div>
+      </div>
+    </div>
+    <button class="hero-nav prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+    <button class="hero-nav next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+    <div class="carousel-indicators hero-dots"><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="" aria-label="Slide 2"></button><button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class="" aria-label="Slide 3"></button></div>
+  </div>
+</section>
+
+<!-- Features strip -->
+<section>
+  <div class="container">
+    <div class="feat-strip row g-0">
+      <div class="col-6 col-lg-3"><div class="fs-item active"><span class="ico"><i class="bi bi-truck"></i></span><div><h6>Free Shipping</h6><p>Free shipping with discount</p></div></div></div>
+      <div class="col-6 col-lg-3"><div class="fs-item"><span class="ico"><i class="bi bi-headset"></i></span><div><h6>Great Support 24/7</h6><p>Instant access to Contact</p></div></div></div>
+      <div class="col-6 col-lg-3"><div class="fs-item"><span class="ico"><i class="bi bi-bag-check"></i></span><div><h6>100% Secure Payment</h6><p>We ensure your money is save</p></div></div></div>
+      <div class="col-6 col-lg-3"><div class="fs-item"><span class="ico"><i class="bi bi-box-seam"></i></span><div><h6>Money-Back Guarantee</h6><p>30 days money-back guarantee</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Introducing our products -->
+<section class="section">
+  <div class="container">
+    <h2 class="title-c">Introducing Our Products</h2>
+    <div class="tabs-c" id="prodTabs">
+      <button type="button" class="active" data-tab="all">All</button>
+      <button type="button" data-tab="vegetables">Vegetable</button>
+      <button type="button" data-tab="fruits">Fruit</button>
+      <button type="button" data-tab="meat-fish">Meat &amp; Fish</button>
+      <a href="shop.html">View All</a>
+    </div>
+    <div class="p-grid" id="popularGrid"></div>
+  </div>
+</section>
+
+<!-- Promo banners -->
+<section class="pb-section">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-lg-4"><a class="pb pb-milk" href="shop.html?cat=beverages"><div><h4>100% Fresh<br>Cow Milk</h4><small>Starting at <b>$14.99</b></small><br><span class="btn-eb btn-eb-white btn-eb-sm mt-3">Shop Now <i class="bi bi-arrow-right"></i></span></div><span class="emo">🥛</span></a></div>
+      <div class="col-lg-4"><a class="pb pb-drink" href="shop.html?cat=beverages"><div><small class="eyebrow">DRINK SALE</small><h4>Water &amp;<br>Soft Drink</h4><span class="btn-eb btn-eb-white btn-eb-sm mt-2">Shop Now <i class="bi bi-arrow-right"></i></span></div><span class="emo">🥤</span></a></div>
+      <div class="col-lg-4"><a class="pb pb-break" href="shop.html?cat=snacks"><div><small class="eyebrow">100% ORGANIC</small><h4>Quick<br>Breakfast</h4><span class="btn-eb btn-eb-white btn-eb-sm mt-2">Shop Now <i class="bi bi-arrow-right"></i></span></div><span class="emo">🥣</span></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Deal of the month -->
+<section class="deal2">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-4 text-center d-none d-lg-block"><div class="art">🧺🥬</div></div>
+      <div class="col-lg-4 text-center">
+        <span class="eyebrow">Best Deals</span>
+        <h2>Our Special Products<br>Deal of the Month</h2>
+        <div class="cd2">
+          <div class="box"><strong id="cdD">00</strong><span>Days</span></div><span class="colon">:</span>
+          <div class="box"><strong id="cdH">00</strong><span>Hours</span></div><span class="colon">:</span>
+          <div class="box"><strong id="cdM">00</strong><span>Mins</span></div><span class="colon">:</span>
+          <div class="box"><strong id="cdS">00</strong><span>Secs</span></div>
+        </div>
+        <a href="shop.html" class="btn-eb">Shop now <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="col-lg-4 text-center d-none d-lg-block"><div class="art">👨‍🌾</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured products -->
+<section class="section">
+  <div class="container">
+    <h2 class="title-c mb-4">Featured Products</h2>
+    <div class="p-grid five" id="featGrid"></div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section bg-soft">
+  <div class="container">
+    <h2 class="title-c mb-4">What our Clients Says</h2>
+    <div class="row g-3">
+      <div class="col-md-4 d-flex flex-column"><div class="t2 flex-grow-1"><div class="q"><i class="bi bi-quote"></i></div><p>"Everything arrives fresh and well packed. The vegetables last much longer than the ones from my local market. Highly recommended!"</p></div><div class="t2-by"><div class="avatar" style="background:#00b207">J</div><h6>Jenny Wilson</h6><small>Customer</small></div></div>
+      <div class="col-md-4 d-flex flex-column"><div class="t2 flex-grow-1"><div class="q"><i class="bi bi-quote"></i></div><p>"Fast delivery and great prices. Customer support helped me quickly when I needed to change something in my order."</p></div><div class="t2-by"><div class="avatar" style="background:#2c742f">G</div><h6>Guy Hawkins</h6><small>Customer</small></div></div>
+      <div class="col-md-4 d-flex flex-column"><div class="t2 flex-grow-1"><div class="q"><i class="bi bi-quote"></i></div><p>"I love the variety of organic products. My weekly grocery shopping now takes me only five minutes. Great service!"</p></div><div class="t2-by"><div class="avatar" style="background:#ff8a00">K</div><h6>Kathryn Murphy</h6><small>Customer</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Video -->
+<section class="section pb-0">
+  <div class="container">
+    <div class="video-sec">
+      <span class="bg-emo" style="left:4%;bottom:-20px">🚜</span><span class="bg-emo" style="right:4%;bottom:-10px">🌾</span>
+      <div class="position-relative">
+        <small class="text-uppercase" style="letter-spacing:2px">Video</small>
+        <h2>We're the Best Organic Farm in the World</h2>
+        <button class="play" type="button" data-bs-toggle="modal" data-bs-target="#videoModal" aria-label="Play video"><i class="bi bi-play-fill"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content">
+    <div class="ratio ratio-16x9 bg-dark text-white">
+      <!-- Put your video here, e.g. <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
+      <div class="d-grid place-items-center text-center p-4"><span>Add your video link in index.html (video modal).</span></div>
+    </div>
+  </div></div>
+</div>
+
+<!-- Latest news -->
+<section class="section">
+  <div class="container">
+    <h2 class="title-c mb-4">Latest News</h2>
+    <div class="row g-4" id="blogGrid"></div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <div class="container">
+    <div class="row align-items-center g-3">
+      <div class="col-lg-4"><a href="index.html" class="logo"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V15" stroke="#00b207" stroke-width="3" stroke-linecap="round"/><path d="M16 17C16 10 11 6 3 6c0 8 4 12 13 11z" fill="#00b207"/><path d="M16 14c0-6 4-10 13-10 0 8-5 12-13 10z" fill="#2c742f"/></svg>Ecobazar</a></div>
+      <div class="col-lg-4"><h3>Subscribe our Newsletter</h3><p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.</p></div>
+      <div class="col-lg-4">
+        <form class="js-newsletter" novalidate>
+          <input type="email" placeholder="Your email address" aria-label="Email">
+          <button class="btn-eb btn-eb-sm" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3">
+        <h6>About Ecobazar</h6>
+        <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+        <span class="contact-pill">(219) 555-0114</span> <span class="px-1">or</span> <span class="contact-pill">hello@ecobazar.com</span>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>My Account</h6>
+        <ul><li><a href="login.html">My Account</a></li><li><a href="checkout.html">Order History</a></li><li><a href="cart.html">Shopping Cart</a></li><li><a href="wishlist.html">Wishlist</a></li><li><a href="login.html">Settings</a></li></ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Helps</h6>
+        <ul><li><a href="contact.html">Contact</a></li><li><a href="#">Faqs</a></li><li><a href="#">Terms &amp; Condition</a></li><li><a href="#">Privacy Policy</a></li></ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Proxy</h6>
+        <ul><li><a href="about.html">About</a></li><li><a href="shop.html">Shop</a></li><li><a href="product-details.html">Products Details</a></li><li><a href="#">Track Order</a></li></ul>
+      </div>
+      <div class="col-6 col-lg-3">
+        <h6>Instagram</h6>
+        <div class="insta">
+          <span style="background:#fde4e1">🍅</span><span style="background:#e4f5d9">🥬</span><span style="background:#ffecd2">🍊</span>
+          <span style="background:#e8efd2">🫒</span><span style="background:#fff1cc">🥭</span><span style="background:#ece4f5">🍆</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="social">
+        <a href="#" class="on" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </span>
+      <span>Ecobazar eCommerce &copy; 2026. All Rights Reserved</span>
+      <span class="pay-badges"><span>Apple Pay</span><span>Visa</span><span>Discover</span><span>Mastercard</span><span>Secure Payment</span></span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+<!-- Bootstrap JS (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- App JS -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>
